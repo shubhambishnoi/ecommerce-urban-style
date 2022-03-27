@@ -1,51 +1,131 @@
-.App {
+@import url("https://escapeui.netlify.app/styling/components.css");
+:root{
+
+  /**** colors ******/
+  --primary-color:#F7F7F7;
+  --secondary-color:#FFFFFF;
+  --gray:#9A9A9A;
+  --red:#e73b10;
+  --blue:#3B82F6;
+  --blue-2:#054fbd;
+  --black:#070808;
+  --dark-gray:#837a7a;
+  --green:#008000;
+}
+
+body{
+  background-color: var(--primary-color);
+}
+.header-main{
+  background-color: var(--secondary-color);
+  justify-content: space-between;
+  width:100%;
+  padding:1rem;
+  top:0;
+  height: 4rem;
+  z-index:1;
+  position: fixed;
+  flex-wrap: wrap;
+}
+
+.header-brand-title{
+  color:var(--dark-gray);
+}
+
+.header-right{
+  gap:1rem;
+}
+.header-search{
+  background-color: var(--secondary-color);
+  padding:4px;
+  height:2rem;
+}
+
+
+.header-login-btn{
+  background-color: var(--gray);
+  color:var(--secondary-color);
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+  height:2rem;
+  padding:4px;
+  width:6rem;
+}
+
+.header-icon{
+  font-size: 1.5rem;
+  color:var(--dark-gray);
+}
+
+.header-icon-p{
+  width:2rem;
+}
+
+.header-icon-p .badge{
+  background-color: var(--red);
+  padding:2px;
+  top:-8px;
+  right:-2px;
+}
+
+.main-ct{
+  flex-direction: column;
+  margin: 6rem 2rem 2rem;
+  gap:2rem;
+  align-items: center;
+}
+
+.category-ct{
+  gap:4rem;
+  flex-wrap: wrap;
+}
+.overlay-txt{
+  background-color: var(--secondary-color);
+  text-align: center;
+  color:var(--dark-gray);
+  width:100%;
+  top:50%;
+  font-size:2rem;
+  padding:6px;
+}
+
+.card-bd{
+  border:none;
+}
+
+.align-c{
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+a{
+  text-decoration: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.shop-now-btn{
+  margin-top: 1rem;
+  background-color: var(--blue);
+  color:var(--secondary-color);
+  padding:6px;
+  font-weight: bold;
+  cursor: pointer;
+  width: 12rem;
+}
+
+
+/************** media queries **********/
+
+@media only screen and (max-width:600px){
+  .header-main{
+      height: 6rem;
   }
-}
 
-.App-header {
-  background-color: #22201c;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  color: white;
-}
+  .main-ct{
+      margin-top:8rem;
+  }
 
-.App-link {
-  color: #61dafb;
-}
-
-.brand-title {
-  font-size: 3rem;
-  color: #d9d9d9;
-}
-
-.brand-title span {
-  color: #ffde59;
-}
-
-.brand-description {
-  font-size: 1.4rem;
-}
-
-.links {
-  display: flex;
-}
-
-.links a {
-  color: #d9d9d9;
-  font-size: 1.2rem;
-  margin: 1rem;
+  .header-right{
+      margin-left:auto;
+  }
 }
