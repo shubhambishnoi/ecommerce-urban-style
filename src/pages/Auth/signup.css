@@ -1,0 +1,68 @@
+.signup-ct{
+    flex-direction: column;
+    gap:6px;
+    width: 25rem;
+    background-color: var(--secondary-color);
+    padding:4rem;
+    box-shadow: 0px 4px 50px 0px #0000000D;
+    margin:6rem auto;
+}
+
+.signup-ct span label{
+    font-weight: bold;
+    display: block;
+}
+
+.signup-ct label{
+    font-size:12px;
+    display: inline;
+    font-weight: bold;
+}
+
+.signup-ct span input{
+    padding:4px;
+    width: 100%;
+    background-color: var(--secondary-color);
+    border:1px solid var(--gray);
+}
+.signup-ct h2{
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.signup-c-a button{
+    margin-top: 1rem;
+    background-color: var(--blue);
+    color:var(--secondary-color);
+    padding:6px;
+    font-weight: bold;
+    cursor: pointer;
+    width: 100%;
+}
+
+.signup-already{
+    margin-top:1rem;
+    font-size: 14px;
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.pwd{
+    position:relative;
+}
+.pwd>i{
+    position:absolute;
+    top:1.2rem;
+    right:2px;
+    cursor: pointer;
+}
+
+/************** media queries **********/
+
+@media only screen and (max-width:600px){
+    .signup-ct{
+        margin: 10rem auto;
+        width: 20rem;
+    }
+}
