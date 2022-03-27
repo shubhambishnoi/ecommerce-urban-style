@@ -21,51 +21,51 @@ return (
       <h3>Category</h3>
       <div>
         <input type="checkbox" id="jeans"/>{" "}
-        <label for="jeans">Jeans</label>
+        <label htmlFor="jeans">Jeans</label>
       </div>
 
       <div>
         <input type="checkbox" id="t-shirt"/>{" "}
-        <label for="t-shirt">T shirts</label>
+        <label htmlFor="t-shirt">T shirts</label>
       </div>
 
       <div>
         <input type="checkbox" id="suit"/>{" "}
-        <label for="suit">Suits</label>
+        <label htmlFor="suit">Suits</label>
       </div><br/>
 
       <h3>Ratings</h3>
 
       <div>
         <input name="ratings" type="checkbox" id="r-4"/>{" "}
-        <label for="r-4">4 Stars & above</label>
+        <label htmlFor="r-4">4 Stars & above</label>
       </div>
 
       <div>
         <input name="ratings" type="checkbox" id="r-3"/>{" "}
-        <label for="r-3">3 Stars & above</label>
+        <label htmlFor="r-3">3 Stars & above</label>
       </div>
 
       <div>
         <input name="ratings" type="checkbox" id="r-2"/>{" "}
-        <label for="r-2">2 Stars & above</label>
+        <label htmlFor="r-2">2 Stars & above</label>
       </div>
 
       <div>
         <input name="ratings" type="checkbox" id="r-1"/>{" "}
-        <label for="r-1">1 Stars & above</label>
+        <label htmlFor="r-1">1 Stars & above</label>
       </div><br/>
 
       <h3>Sort by</h3>
 
       <div>
         <input name="sort" type="radio" id="l-h"/>{" "}
-        <label for="l-h">Price - Low to High</label>
+        <label htmlFor="l-h">Price - Low to High</label>
       </div>
 
       <div>
         <input name="sort" type="radio" id="h-l"/>{" "}
-        <label for="h-l">Price - High to Low</label>
+        <label htmlFor="h-l">Price - High to Low</label>
       </div>
     </div>
 
